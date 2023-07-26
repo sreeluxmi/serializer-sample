@@ -1,10 +1,10 @@
 from rest_framework import serializers
-from .models import Book
+from .models import Series
 
 
-class BookSerializer(serializers.ModelSerializer):
+class SeriesSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Book
+        model = Series
         fields = "__all__"
 
     # def create(self, data):
